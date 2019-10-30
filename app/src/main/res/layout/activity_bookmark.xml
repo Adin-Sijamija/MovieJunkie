@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookmarkActivity">
+
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:itemIconTint="@drawable/bottom_navigation_colors"-->
+        <!--app:itemTextColor="@drawable/bottom_navigation_colors"-->
+        <!--app:menu="@menu/bottom_nav_menu" />-->
+
+    <!--app:itemTextColor="@color/colorSecondary"-->
+    <!--app:itemIconTint="@color/colorSecondary"-->
+    <!--app:itemTextAppearanceActive="@color/colorPrimary"-->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorBackground"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <ScrollView
+        android:id="@+id/BookmarkScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/WatchingID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="8dp"
+                android:text="Curently watching"
+                android:textAllCaps="true"
+                android:textColor="@color/colorSecondary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WatchingMoviesID"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/PlannedID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="8dp"
+                android:text="Planed Movies"
+                android:textAllCaps="true"
+                android:textColor="@color/colorSecondary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/PlanedMoviesID"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/WatchedID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="8dp"
+                android:text="Watched Movie"
+                android:textAllCaps="true"
+                android:textColor="@color/colorSecondary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WatchedMoviesID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<resources>-->
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <!--<color name="colorWhite">#EEEEEE</color>-->
+
+    <!--<color name="black_overlay">#66000000</color>-->
+
+<!--</resources>-->
+
+
+<resources>
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorSurface">#121212</color>
+    <color name="colorError">#CF6679</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnBackground">#ffffff</color>
+    <color name="colorOnSurface">#ffffff</color>
+    <color name="colorOnError">#000000</color>
+
+
+    <color name="colorGrey1">#212121</color>
+    <color name="colorGrey2">#303030</color>
+    <color name="colorGrey3">#424242</color>
+
+
+    <color name="colorPrimaryDark">#00574B</color>
+<color name="colorAccent">#D81B60</color>
+<color name="colorWhite">#EEEEEE</color>
+
+<color name="black_overlay">#66000000</color>
+
+</resources>
+
+
+
+<!--<resources>-->
+
+<!--&lt;!&ndash;DARK COLOR THEME&ndash;&gt;-->
+<!--&lt;!&ndash;The same color values are defined for dark theme, but with values more appropriate for &ndash;&gt;-->
+<!--&lt;!&ndash;low-luminance UIs. These colors will be used by night/themes.xml.&ndash;&gt;-->
+
+<!--<color name="color_primary">#35148F</color>-->
+<!--<color name="color_primary_variant">#4b01d0</color>-->
+<!--<color name="color_secondary">#03dac6</color>-->
+<!--<color name="color_secondary_variant">#018786</color>-->
+
+<!--<color name="color_background">#000000</color>-->
+<!--<color name="color_surface">#121212</color>-->
+<!--<color name="color_error">#cf6679</color>-->
+
+<!--<color name="color_on_primary">#000000</color>-->
+<!--<color name="color_on_secondary">#000000</color>-->
+<!--<color name="color_on_background">#ffffff</color>-->
+<!--<color name="color_on_surface">#ffffff</color>-->
+<!--<color name="color_on_error">#000000</color>-->
+<!--</resources>-->

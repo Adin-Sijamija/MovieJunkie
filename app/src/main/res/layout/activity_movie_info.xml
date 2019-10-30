@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MovieInfo">
+
+    <ImageView
+        android:id="@+id/MovieInfoPoster"
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/MovieInfoTitle"
+        android:layout_width="228dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/MovieInfoPoster"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/rajdhani_medium"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSecondary"
+        android:textSize="18sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/TabsID"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_below="@id/TabLayoutId"
+        android:layout_marginTop="6dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TabLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MovieInfoTitle"
+
+        android:layout_marginTop="8dp"
+        android:background="@color/colorGrey3"
+        app:tabBackground="@color/colorGrey3">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/GenresID"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/TabsID"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingLeft="16dp"
+        android:text="Genre"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/GenresCruumbs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/GenresID"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="false"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/shape_chip_drawable"-->
+        <!--android:text="Action"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold" />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GenresCruumbs"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingLeft="16dp"
+        android:text="Similar Movies"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/DbTestButton"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MovieInfoPoster"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/MovieInfoTitle"
+        android:text="+ ADD" />
+
+
+</RelativeLayout>
+</ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/coordinatorLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:context=".MovieInfo">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/MovieInfoPoster"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="399dp"-->
+            <!--tools:srcCompat="@tools:sample/avatars" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="Back" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/MovieInfoTitle"-->
+            <!--android:layout_width="239dp"-->
+            <!--android:layout_height="49dp"-->
+            <!--android:layout_below="@+id/MovieInfoPoster"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="TextView"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<androidx.viewpager.widget.ViewPager-->
+            <!--android:id="@+id/TabsID"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="259dp"-->
+            <!--android:layout_below="@id/TabLayoutId"-->
+            <!--android:layout_marginTop="6dp" />-->
+
+        <!--<com.google.android.material.tabs.TabLayout-->
+            <!--android:id="@+id/TabLayoutId"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/MovieInfoTitle"-->
+
+            <!--android:layout_marginTop="8dp"-->
+            <!--&gt;-->
+
+            <!--<com.google.android.material.tabs.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Monday" />-->
+
+            <!--<com.google.android.material.tabs.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Tuesday" />-->
+
+            <!--<com.google.android.material.tabs.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Wednesday" />-->
+        <!--</com.google.android.material.tabs.TabLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/GenresID"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_below="@+id/TabsID"-->
+            <!--android:layout_marginTop="11dp"-->
+            <!--android:text="Genre" />-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/GenresCruumbs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@+id/GenresID"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerInParent="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/shape_chip_drawable"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Action"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/GenresCruumbs"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Similar Movies" />-->
+
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textView"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:scrollbars="vertical" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/DbTestButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/MovieInfoPoster"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_toEndOf="@+id/MovieInfoTitle"-->
+
+            <!--android:text="+ADD" />-->
+
+
+    <!--</RelativeLayout>-->
+<!--</ScrollView>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

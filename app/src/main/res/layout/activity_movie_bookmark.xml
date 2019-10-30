@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/coordinatorLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MovieBookmark">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="67dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/MovieBookmarkPoster"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                app:srcCompat="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TabsBookmarkID"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingLeft="32dp"
+                android:text="STATUS "
+                android:textColor="@color/colorSecondary" />
+
+            <ImageView
+                android:id="@+id/MovieBookmarkPoster"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/MovieBookmarkTitle"
+                android:layout_width="239dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/MovieBookmarkPoster"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rajdhani_medium"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/colorSecondary"
+                android:textSize="18sp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/TabsBookmarkID"
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                android:layout_below="@id/TabBookmarkLayoutId"
+                android:layout_marginTop="6dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/TabBookmarkLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MovieBookmarkTitle"
+
+                android:layout_marginTop="16dp"
+                app:tabBackground="@color/colorGrey2">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:id="@+id/GenresBookmarkCruumbs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal">
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerInParent="false"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/shape_chip_drawable"-->
+                <!--android:text="Action"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/StatusMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="TextView" />
+
+                <Button
+                    android:id="@+id/ModalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:text="CHANGE"
+
+
+                    android:textColor="@color/colorSecondary"
+                    app:backgroundTint="@android:color/transparent"
+                    app:cornerRadius="8dp"
+                    app:rippleColor="@color/colorGrey2"
+                    app:strokeColor="@color/colorGrey3"
+
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
